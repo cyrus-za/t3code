@@ -3495,7 +3495,7 @@ export default function ChatView(props: ChatViewProps) {
                                 isLocalDraftThread && activeProject === null
                               }
                               phase={phase}
-                              threadWorking={isWorking}
+                              threadWorking={isWorking || phase === "connecting"}
                               isCompacting={isCompacting}
                               canInterrupt={canInterruptRunningThread}
                               isSendBusy={
